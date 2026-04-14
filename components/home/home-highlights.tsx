@@ -8,8 +8,8 @@ export function HomeHighlights() {
       <div className="page-shell">
         <SectionIntro
           eyebrow="Core Modules"
-          title="三段式信息架构，让展示与学习都更完整"
-          description="首页承担导览与展示，闯关答题提供即时反馈，学习画像测试提供报告式输出，知识卡片页则作为内容承接层，让整个网站不是空壳切页，而是完整的学习闭环。"
+          title="从练习到复盘，三步完成一轮学习"
+          description="先通过答题检验掌握情况，再用学习画像了解自己的复习偏好，最后用知识卡片集中回顾重点，让复习过程更清楚、更连贯。"
         />
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {homeHighlights.map((item, index) => (

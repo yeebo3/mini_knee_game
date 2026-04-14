@@ -48,9 +48,9 @@ export function StyleResultView() {
       <div className="page-shell space-y-8">
         <Card className="report-grid overflow-hidden p-8 md:p-10">
           <SectionIntro
-            eyebrow="Profile Report"
+            eyebrow="Learning Profile"
             title={profile.name}
-            description={`${profile.subtitle}。这是一份偏学习策略的结果报告，而不是娱乐化人格标签。完成时间：${formatDate(session.completedAt)}。`}
+            description={`${profile.subtitle}。根据本次作答结果整理了适合你的复习建议，完成时间：${formatDate(session.completedAt)}。`}
           />
           <div className="mt-8 grid gap-4 md:grid-cols-4">
             {session.scores.map((item) => {
@@ -75,7 +75,7 @@ export function StyleResultView() {
 
         <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
           <Card className="p-6 md:p-8">
-            <CardTitle>画像简介</CardTitle>
+            <CardTitle>画像解读</CardTitle>
             <CardText className="mt-4">{profile.summary}</CardText>
             <div className="mt-8">
               <p className="text-sm font-semibold text-ink">特征分析</p>
@@ -90,7 +90,7 @@ export function StyleResultView() {
           </Card>
 
           <Card className="p-6 md:p-8">
-            <CardTitle>学习建议与推荐复习方法</CardTitle>
+            <CardTitle>复习建议</CardTitle>
             <div className="mt-6 grid gap-6 md:grid-cols-2">
               <div>
                 <p className="text-sm font-semibold text-ink">学习建议</p>
@@ -103,7 +103,7 @@ export function StyleResultView() {
                 </div>
               </div>
               <div>
-                <p className="text-sm font-semibold text-ink">推荐复习方法</p>
+                <p className="text-sm font-semibold text-ink">建议尝试的方法</p>
                 <div className="mt-4 space-y-3">
                   {profile.reviewMethods.map((method) => (
                     <div key={method} className="rounded-[1.3rem] border border-line bg-white p-4 text-sm leading-7 text-slate-700">

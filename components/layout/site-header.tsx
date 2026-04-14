@@ -23,7 +23,7 @@ export function SiteHeader() {
           </div>
           <div>
             <p className="text-sm font-semibold text-ink">习概互动学习站</p>
-            <p className="text-xs text-slate-500">Course Project Showcase</p>
+            <p className="text-xs text-slate-500">答题 · 测试 · 复盘</p>
           </div>
         </Link>
         <nav className="hidden items-center gap-2 md:flex">

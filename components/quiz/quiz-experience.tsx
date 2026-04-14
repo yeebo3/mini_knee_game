@@ -83,7 +83,7 @@ export function QuizExperience() {
             <Badge className="border-clay/30 bg-clay/10 text-clay">Module 01</Badge>
             <h1 className="mt-4 font-serif text-4xl text-ink">闯关答题</h1>
             <p className="mt-3 max-w-2xl text-base leading-8 text-slate-600">
-              采用一次一题的沉浸式流程。每题提交后立即展示正误、正确答案、题目解析和背景知识，把练习过程转化为即时学习过程。
+              每次只专注一道题。提交后会立即看到正误、正确答案、解析和背景知识，方便当场理解、当场纠正。
             </p>
           </div>
           <div className="w-full max-w-md rounded-[1.5rem] border border-line bg-white p-5 shadow-card">
@@ -158,13 +158,13 @@ export function QuizExperience() {
 
           <Card className="p-6 md:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
-              单题反馈区
+              本题讲解
             </p>
             {!submitted || !currentResult ? (
               <div className="mt-10 rounded-[1.5rem] border border-dashed border-line bg-sand/60 p-6">
-                <CardTitle className="text-xl">提交后显示解析</CardTitle>
+                <CardTitle className="text-xl">提交后查看本题讲解</CardTitle>
                 <CardText className="mt-3">
-                  这里会显示正误判断、正确答案、解析、背景知识，以及对应的章节和关键词，突出“边答边学”的展示亮点。
+                  答完后这里会显示正误、正确答案、解析和章节关键词，帮助你及时弄清这一题考查的重点。
                 </CardText>
               </div>
             ) : (

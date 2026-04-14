@@ -66,7 +66,7 @@ export function StyleTestExperience() {
             <Badge className="border-ink/15 bg-ink/5 text-ink">Module 02</Badge>
             <h1 className="mt-4 font-serif text-4xl text-ink">学习风格测试</h1>
             <p className="mt-3 max-w-2xl text-base leading-8 text-slate-600">
-              以较克制的问卷交互，识别你更偏向哪一种习概理解路径。结果不是娱乐化标签，而是一份可用于复习规划的学习画像报告。
+              通过 10 道问题了解你更顺手的习概学习方式，结果会给出对应的复习建议和方法参考。
             </p>
           </div>
           <div className="w-full max-w-md rounded-[1.5rem] border border-line bg-white p-5 shadow-card">
@@ -74,7 +74,7 @@ export function StyleTestExperience() {
               <span>
                 进度 {currentIndex + 1}/{styleQuestions.length}
               </span>
-              <span>沉浸式逐题切换</span>
+              <span>共 {styleQuestions.length} 题</span>
             </div>
             <ProgressBar className="mt-4" value={progress} />
           </div>
@@ -83,7 +83,7 @@ export function StyleTestExperience() {
         <Card className="mx-auto max-w-5xl p-6 md:p-10">
           <div className="flex flex-wrap items-center gap-3">
             <Badge>{`问题 ${currentIndex + 1}`}</Badge>
-            <Badge className="bg-sand">Learning Profile</Badge>
+            <Badge className="bg-sand">学习偏好</Badge>
           </div>
           <CardTitle className="mt-6 text-3xl leading-[1.6]">{currentQuestion.prompt}</CardTitle>
           <CardText className="mt-3">{currentQuestion.note}</CardText>
@@ -103,7 +103,7 @@ export function StyleTestExperience() {
                   onClick={() => setSelectedOptionId(option.id)}
                   type="button"
                 >
-                  <p className="text-xs uppercase tracking-[0.16em] text-slate-400">Option 0{index + 1}</p>
+                  <p className="text-xs uppercase tracking-[0.16em] text-slate-400">选项 0{index + 1}</p>
                   <p className="mt-3 text-sm leading-7 text-slate-700">{option.text}</p>
                 </button>
               );

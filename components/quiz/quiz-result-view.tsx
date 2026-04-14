@@ -47,9 +47,9 @@ export function QuizResultView() {
       <div className="page-shell space-y-8">
         <Card className="report-grid overflow-hidden p-8 md:p-10">
           <SectionIntro
-            eyebrow="Quiz Report"
+            eyebrow="Quiz Summary"
             title={`${getQuizLevel(session.accuracy)} · 闯关答题结果`}
-            description="结果页不仅展示总分，也结合章节准确率给出复习重点，强化课程作业展示中的“分析感”和“报告感”。"
+            description="你已经完成本轮答题。下面整理了整体表现和各章节情况，方便继续复习。"
           />
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             <div className="rounded-[1.5rem] border border-white/80 bg-white/90 p-5">
@@ -75,7 +75,7 @@ export function QuizResultView() {
           <Card className="p-6 md:p-8">
             <CardTitle>复习建议</CardTitle>
             <CardText className="mt-4">
-              当前结果显示你已经完成了一轮知识检验。建议优先复看准确率偏低的章节，再结合知识卡片进行有针对性的整理。
+              这一轮作答已经完成。建议先回顾准确率较低的章节，再配合知识卡片集中复习。
             </CardText>
             <div className="mt-6 space-y-4">
               {weakestChapters.map((item) => (
@@ -98,7 +98,7 @@ export function QuizResultView() {
           <Card className="p-6 md:p-8">
             <CardTitle>章节统计</CardTitle>
             <CardText className="mt-4">
-              按章节统计正确率，方便展示哪些知识模块已经掌握，哪些仍需补强。
+              按章节查看正确率，更容易找到已经掌握的内容和还需要补强的部分。
             </CardText>
             <div className="mt-8 space-y-5">
               {session.chapterStats.map((item) => (

@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "习概互动学习站",
-  description: "用于课程作业展示的习概互动学习网站，包含闯关答题、学习画像测试与知识卡片模块。"
+  description: "围绕闯关答题、学习画像测试和知识卡片，帮助你梳理课程重点并完成复盘。"
 };
 
 export default function RootLayout({

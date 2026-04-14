@@ -26,8 +26,8 @@ export function KnowledgeLibrary() {
       <div className="page-shell">
         <SectionIntro
           eyebrow="Knowledge Deck"
-          title="知识卡片 / 知识库"
-          description="把课程重点以卡片形式展开，适合配合答题结果页查漏补缺，也适合在展示时直接说明网站不仅有交互，还有结构化内容沉淀。"
+          title="知识卡片"
+          description="把课程重点整理成卡片，方便按章节浏览，也适合结合答题结果快速回顾薄弱内容。"
         />
 
         <div className="mt-8 flex flex-wrap gap-3">
