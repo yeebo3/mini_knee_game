@@ -40,7 +40,7 @@ xigai/
 ### 1. 克隆仓库
 
 ```bash
-git clone <你的仓库地址>
+git clone https://github.com/yeebo3/mini_knee_game.git
 cd xigai
 ```
 
